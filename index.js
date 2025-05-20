@@ -1,4 +1,4 @@
-let host = "http://localhost:5000";
+let host = "https://boomtown.onrender.com";
 document.addEventListener("DOMContentLoaded", function () {
   fetchAPI(`${host}/getCandle`).then((data) => {
     fillInCards(data);

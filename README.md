@@ -97,8 +97,9 @@ GET
 Accepts an email and the link the user clicked on, then records it to `emails.json`
 
 # Screenshots 📸:
-![screenshot-1747759654573](https://github.com/user-attachments/assets/78947b31-33ce-4034-a96a-40300457404c)
-![screenshot-1747759733885](https://github.com/user-attachments/assets/45f40ea0-c8ed-4a03-afc3-6ec82562c0b6)
-![screenshot-1747759767486](https://github.com/user-attachments/assets/5c034f4e-cd38-4288-9213-fd11bd824a34)
+![screenshot-1747759938511](https://github.com/user-attachments/assets/635f5e1b-0b9c-4cf6-a94e-9bd06e59c42c)
+![screenshot-1747759953878](https://github.com/user-attachments/assets/6004c99f-e634-4a19-8192-38343fd6d922)
+![screenshot-1747759966880](https://github.com/user-attachments/assets/577f02bd-dbcb-48e1-9b69-c88858804e81)
+
 
 

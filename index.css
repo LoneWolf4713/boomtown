@@ -1,0 +1,222 @@
+
+@font-face {
+    font-family: coolvetica;
+    src: url("Coolvetica-Heavy.otf");
+}
+@font-face {
+    font-family: paradigma;
+    src: url("Paradigma\ Regular\ Trial.otf");
+}
+
+.coolvetica{
+    font-family: coolvetica;
+}
+
+*{
+    font-family: coolvetica;
+}
+body {
+  min-height: 100vh;
+}
+#landingSection{
+    background-color: #63a4d8;
+}
+#eventsSection{
+    background-color: #BC1034;
+}
+.bg-green{
+    background-color: #C3F73A !important;
+}
+.bg-blue{
+    background-color: #0A2843 !important;
+}
+
+
+.boombastic {
+  font-size: clamp(2rem, 10vw, 10rem); 
+  font-weight: 900;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: -2px;
+  color: #C3F73A;
+  text-shadow: -7px 7px 0 #0A2843;
+  display: inline-block;
+  transition: all 0.4s ease;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeInBoom 1s ease forwards;
+  text-align: center;
+  word-break: break-word;
+}
+
+
+.boombastic:hover {
+  color: #0A2843;
+  text-shadow: 4px 4px 0 #C3F73A;
+  transform: scale(1.10) rotate(-1deg);
+  animation: fadeInBoom 1s ease forwards, wiggle 0.4s ease-in-out infinite;
+}
+
+@keyframes fadeInBoom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes wiggle {
+  0%   { transform: scale(1.05) rotate(-1deg); }
+  25%  { transform: scale(1.05) rotate(1.5deg); }
+  50%  { transform: scale(1.05) rotate(-1.5deg); }
+  75%  { transform: scale(1.05) rotate(1deg); }
+  100% { transform: scale(1.05) rotate(-1deg); }
+}
+
+
+#greeting-text{
+    color: #BC1034
+}
+
+#categories{
+  overflow-x: scroll;
+}
+
+.is-chosen{
+  background-color: #0A2843;
+  color:#C3F73A;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A2843; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C3F73A;
+  border-radius: 5px;
+  border: 2px solid #0A2843;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d4ff50;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #C3F73A #0A2843;
+}
+
+
+
+.card {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.05) rotateZ(-0.3deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+#categories .button {
+  transition: all 0.25s ease-in-out;
+  border: 2px solid transparent;
+}
+#categories .button:hover {
+  background-color: #C3F73A;
+  color: black !important;
+  transform: scale(1.05);
+}
+
+
+
+.button.bg-green {
+  background-color: #C3F73A;
+  color: black;
+  transition: all 0.2s ease;
+}
+.button.bg-green:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #C3F73A;
+}
+
+
+.modal.is-active .modal-content {
+  animation: slideFadeIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.modal.is-active .modal-background {
+  animation: fadeInBg 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.modal.is-active .modal-close {
+  animation: fadeInBg 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer.footer {
+  background-color: #0A2843; 
+  color: #C3F73A; 
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+footer.footer:hover {
+  background-color: #C3F73A;
+  color: #0A2843;
+}
+
+footer.footer:hover .boombastic {
+  color: #0A2843;
+  text-shadow: 4px 4px 0 #C3F73A;
+}
+
+footer.footer .boombastic {
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+

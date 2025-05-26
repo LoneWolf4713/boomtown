@@ -1,6 +1,6 @@
-let host = "https://boomtown.onrender.com";
+let host = "https://lonewolf4713.github.io/boomtown/scraped";
 document.addEventListener("DOMContentLoaded", function () {
-  fetchAPI(`${host}/getCandle`).then((data) => {
+  fetchAPI(`${host}/candlelight.json`).then((data) => {
     fillInCards(data);
   });
 });
@@ -149,7 +149,8 @@ function loadCandlelight(e) {
   setTimeout( ()=> {
   e.classList.add("is-chosen");
   }, 100)
-  fetchAPI(`${host}/getCandle`).then((data) => {
+  fetchAPI(`${host}/candlelight.json`).then((data) => {
+    // console.log(data);
     fillInCards(data);
   });
 }
@@ -158,7 +159,7 @@ function loadMusic(e) {
     setTimeout( ()=> {
   e.classList.add("is-chosen");
   }, 100)
-  fetchAPI(`${host}/getMusic`).then((data) => {
+  fetchAPI(`${host}/musicals.json`).then((data) => {
     fillInCards(data);
   });
 }function loadFun(e) {
@@ -166,7 +167,7 @@ function loadMusic(e) {
     setTimeout( ()=> {
   e.classList.add("is-chosen");
   }, 100)
-  fetchAPI(`${host}/getFun`).then((data) => {
+  fetchAPI(`${host}/attractions.json`).then((data) => {
     fillInCards(data);
   });
 }function loadThings(e) {
@@ -174,7 +175,7 @@ function loadMusic(e) {
     setTimeout( ()=> {
   e.classList.add("is-chosen");
   }, 100)
-  fetchAPI(`${host}/getThings`).then((data) => {
+  fetchAPI(`${host}/activities.json`).then((data) => {
     fillInCards(data);
   });
 }function loadCultural(e) {
@@ -182,7 +183,7 @@ function loadMusic(e) {
     setTimeout( ()=> {
   e.classList.add("is-chosen");
   }, 100)
-  fetchAPI(`${host}/getCultural`).then((data) => {
+  fetchAPI(`${host}/art.json`).then((data) => {
     fillInCards(data);
   });
 }function loadLive(e) {
@@ -190,7 +191,7 @@ function loadMusic(e) {
     setTimeout( ()=> {
   e.classList.add("is-chosen");
   }, 100)
-  fetchAPI(`${host}/getLive`).then((data) => {
+  fetchAPI(`${host}/comedy.json`).then((data) => {
     fillInCards(data);
   });
 }

@@ -1,147 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BoomTown - One Stop Solution For All Events In Sydney !</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Landing Section -->
-    <section
-      id="landingSection"
-      class="section is-fullheight is-flex is-justify-content-center is-align-items-center is-flex-direction-column"
-    >
-      <div class="title is-1 has-text-black has-text-centered">
-        <span id="greeting-text">Namaste!</span>
-        Welcome To
-      </div>
-      <h1 class="boombastic coolvetica">BOOMTOWN</h1>
 
-      <div class="subtitle is-size-4 mt-5 has-text-black has-text-centered">
-        Every loud, crazy, unforgettable event in Sydney <br />
-        — all on your doorstep.
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoomTown - One Stop Solution For All Events In Sydney !</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
 
-    <section class="section has-background-light" id="eventsSection">
-      <div class="container has-text-centered">
-        <h1 class="title is-1">Events</h1>
+<body>
+  <!-- Landing Section -->
+  <section id="landingSection"
+    class="section is-fullheight is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+    <div class="title is-1 has-text-black has-text-centered">
+      <span id="greeting-text">Namaste!</span>
+      Welcome To
+    </div>
+    <h1 class="boombastic coolvetica">BOOMTOWN</h1>
 
-        <div class="level is-mobile pb-2" id="categories">
-          <div class="level-item">
-            <button
-              class="button is-rounded is-outline is-chosen"
-              onclick="loadCandlelight(this)"
-            >
-              Candlelight Concerts
-            </button>
-          </div>
-          <div class="level-item">
-            <button
-              class="button is-rounded is-outline"
-              onclick="loadMusic(this)"
-            >
-              Music Events
-            </button>
-          </div>
-          <div class="level-item">
-            <button
-              class="button is-rounded is-outline"
-              onclick="loadThings(this)"
-            >
-              Things to Do
-            </button>
-          </div>
-          <div class="level-item">
-            <button
-              class="button is-rounded is-outline"
-              onclick="loadFun(this)"
-            >
-              Fun Activities
-            </button>
-          </div>
-          <div class="level-item">
-            <button
-              class="button is-rounded is-outline"
-              onclick="loadCultural(this)"
-            >
-              Cultural Activities
-            </button>
-          </div>
-          <div class="level-item">
-            <button
-              class="button is-rounded is-outline"
-              onclick="loadLive(this)"
-            >
-              Live Shows & Performances
-            </button>
-          </div>
+    <div class="subtitle is-size-4 mt-5 has-text-black has-text-centered">
+      Every loud, crazy, unforgettable event in Sydney <br />
+      — all on your doorstep.
+    </div>
+  </section>
+
+  <section class="section has-background-light" id="eventsSection">
+    <div class="container has-text-centered">
+      <h1 class="title is-1">Events</h1>
+
+      <div class="level is-mobile pb-2" id="categories">
+        <div class="level-item">
+          <button class="button is-rounded is-outline is-chosen" onclick="loadCandlelight(this)">
+            Candlelight Concerts
+          </button>
+        </div>
+        <div class="level-item">
+          <button class="button is-rounded is-outline" onclick="loadLive(this)">
+            Live Shows & Performances
+          </button>
         </div>
 
-        <hr class="hr has-background-grey-lighter" />
+        <div class="level-item">
+          <button class="button is-rounded is-outline" onclick="loadThings(this)">
+            Things to Do
+          </button>
+        </div>
+        <div class="level-item">
+          <button class="button is-rounded is-outline" onclick="loadFun(this)">
+            Fun Activities
+          </button>
+        </div>
+        <div class="level-item">
+          <button class="button is-rounded is-outline" onclick="loadCultural(this)">
+            Cultural Activities
+          </button>
+        </div>
+        <div class="level-item">
+          <button class="button is-rounded is-outline" onclick="loadMusic(this)">
+            Music Events
+          </button>
+        </div>
 
-        <div
-          class="columns is-vcentered is-multiline is-centered"
-          id="eventsContainer"
-        ></div>
       </div>
-    </section>
 
-    <div id="modalGetEmail" class="modal">
-      <div class="modal-background"></div>
+      <hr class="hr has-background-grey-lighter" />
 
-      <div class="modal-content">
-        <article class="message is-primary">
-          <div class="message-header">
-            <p class="is-size-4">
-              Your next adventure is one step away! Drop your email to continue.
-            </p>
-          </div>
-          <div class="message-body is-size-5">
-            <div class="field">
-              <label for="" class="label">Email:</label>
-              <div class="control">
-                <input type="email" class="input" id="email" />
-              </div>
+      <div class="columns is-vcentered is-multiline is-centered" id="eventsContainer"></div>
+    </div>
+  </section>
+
+  <div id="modalGetEmail" class="modal">
+    <div class="modal-background"></div>
+
+    <div class="modal-content">
+      <article class="message is-primary">
+        <div class="message-header">
+          <p class="is-size-4">
+            Your next adventure is one step away! Drop your email to continue.
+          </p>
+        </div>
+        <div class="message-body is-size-5">
+          <div class="field">
+            <label for="" class="label">Email:</label>
+            <div class="control">
+              <input type="email" class="input" id="email" />
             </div>
-            <button
-              class="button is-fullwidth is-primary bg-green"
-              data-url=""
-              id="redirectStartBtn"
-              type="button"
-            >
-              Get Tickets!
-            </button>
           </div>
-        </article>
-      </div>
-
-      <button class="modal-close is-large" aria-label="close"></button>
+          <button class="button is-fullwidth is-primary bg-green" data-url="" id="redirectStartBtn" type="button">
+            Get Tickets!
+          </button>
+        </div>
+      </article>
     </div>
 
-    <footer class="footer">
-      <div class="content has-text-centered  ">
-        <p class="">
-          <span class="boombastic">BOOMTOWN</span>
-          <br>
-          <span class="title is-1 has-text-light">- by prtyksh</span>
-           
-        </p>
-      </div>
-    </footer>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="index.js"></script>
-    <script src="modal.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="content has-text-centered  ">
+      <p class="">
+        <span class="boombastic">BOOMTOWN</span>
+        <br>
+        <span class="title is-1 has-text-light">- by prtyksh</span>
+
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="index.js"></script>
+  <script src="modal.js"></script>
+</body>
+
 </html>
